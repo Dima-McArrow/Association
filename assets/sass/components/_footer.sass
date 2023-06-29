@@ -1,0 +1,21 @@
+@use "../utils/_main" as main
+
+footer
+  background-color: main.$darkGreen
+  display: grid
+  grid-template-columns: 2fr 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr
+  grid-template-areas: "text logo logo logo" "legal legal legal legal"
+  align-items: center
+  justify-content: center
+  align-content: center
+
+  h3
+    grid-area: text
+
+  p
+    grid-area: legal
+
+  .footer__logo__holder
+    display: flex
+    justify-content: center
