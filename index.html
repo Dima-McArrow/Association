@@ -13,7 +13,7 @@
   <body>
     <header class="header">
       <div class="header__logo">logo</div>
-      <nav>
+      <nav class="main__nav">
         <ul>
           <li>Qui sommes nous?</li>
           <li>Événements</li>
@@ -41,7 +41,7 @@
         </section>
         <section class="cards">
           <div class="card" style="width: 18rem;">
-            <img src="./assets/visuals/jpg/IMG_1630.jpg" class="card-img-top" alt="card-1">
+            <img src="./assets/visuals/jpg/IMG_1632.jpg" class="card-img-top" alt="card-1">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -68,11 +68,45 @@
       </article>
     </main>
     <footer>
-      <h3>Retrouvez-nous sur nos reseaux sociaux:</h3>
-      <div class="footer__logo__holder"><img class="contact__logo" src="./assets/visuals/png/Facebook_logo_(square).png" alt="Facebook"></div>
-      <div class="footer__logo__holder"><img class="contact__logo" src="./assets/visuals/png/Logo_of_Twitter.svg.png" alt="Twitter"></div>
-      <div class="footer__logo__holder"><img class="contact__logo" src="./assets/visuals/png/Instagram_icon.png.webp" alt="Instagram"></div>
-      <p class="legal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque unde magni sapiente consequuntur distinctio, placeat, autem harum iure pariatur praesentium architecto quia minima asperiores eum atque! Quasi rem inventore ea?</p>
+      <h3>Retrouvez-nous<br /> sur nos reseaux sociaux:</h3>
+      <div class="socialNet">
+        <div class="footer__logo__holder"><a href="http://facebook.com" target="_blank" rel=”noopener noreferrer”><img class="contact__logo" src="./assets/visuals/png/Facebook_logo_(square).png" alt="Facebook"></a></div>
+        <div class="footer__logo__holder"><a href="http://twitter.com" target="_blank" rel=”noopener noreferrer”><img class="contact__logo" src="./assets/visuals/png/Logo_of_Twitter.svg.png" alt="Twitter"></a></div>
+        <div class="footer__logo__holder"><a href="http://instagram.com" target="_blank" rel=”noopener noreferrer”><img class="contact__logo" src="./assets/visuals/png/Instagram_icon.png.webp" alt="Instagram"></a></div>
+      </div>
+      <p class="legal"> <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12C5 8.13401 8.13401 5 12 5C13.8565 5 15.637 5.7375 16.9497 7.05025C18.2625 8.36301 19 10.1435 19 12Z" stroke="#F1CCA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14.646 9.00002C13.0379 7.58179 10.5975 7.6838 9.11336 9.23129C7.62921 10.7788 7.62921 13.2213 9.11336 14.7688C10.5975 16.3162 13.0379 16.4182 14.646 15" stroke="#F1CCA9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg> 2023 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque unde magni sapiente consequuntur distinctio, placeat, autem harum iure pariatur praesentium architecto quia minima asperiores eum atque! Quasi rem inventore ea?</p>
+      <a class="mail" href="mailto:dsm.box@gmail.com"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16" stroke="#F1CCA9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg><br /><br />dsm.box@gmail.com</a>
+      <a class="phone" href="tel:+33768732599"><svg height="30px" width="30px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+        viewBox="0 0 512 512"  xml:space="preserve">
+     <style type="text/css">
+       .st0{fill:#F1CCA9;}
+     </style>
+     <g>
+       <path class="st0" d="M130.344,129.778c-27.425,17.786-32.812,73.384-22.459,118.698c8.064,35.288,25.208,82.623,54.117,127.198
+         c27.196,41.933,65.138,79.532,94.069,101.286c37.151,27.934,90.112,45.688,117.537,27.902c13.868-8.994,34.47-33.567,35.41-37.976
+         c0,0-12.082-18.629-14.733-22.716l-40.516-62.47c-3.011-4.642-21.892-0.399-31.484,5.034
+         c-12.938,7.331-24.854,27.001-24.854,27.001c-8.872,5.125-16.302,0.019-31.828-7.126c-19.081-8.779-40.535-36.058-57.609-60.765
+         c-15.595-25.666-31.753-56.38-31.988-77.382c-0.192-17.09-1.824-25.957,6.473-31.967c0,0,22.82-2.858,34.79-11.681
+         c8.872-6.542,20.447-22.051,17.436-26.693l-40.515-62.47c-2.651-4.088-14.733-22.716-14.733-22.716
+         C175.05,111.994,144.211,120.784,130.344,129.778z"/>
+       <path class="st0" d="M360.036,176.391c16.488-67.201-22.687-135.921-88.913-155.97L276.715,0
+         c77.488,23.14,123.308,103.517,103.742,181.983L360.036,176.391z"/>
+       <path class="st0" d="M315.781,164.273c9.845-42.802-14.93-86.262-56.776-99.596l5.594-20.428
+         c53.106,16.435,84.524,71.548,71.61,125.618L315.781,164.273z"/>
+       <path class="st0" d="M271.466,152.138c3.288-18.373-7.111-36.616-24.596-43.147l5.605-20.468
+         c28.724,9.694,45.751,39.564,39.459,69.22L271.466,152.138z"/>
+     </g>
+     </svg><br /><br /> 07 68 73 25 99</a>
+      <p class="adress"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#F1CCA9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="3" y="5" width="18" height="14" rx="2" stroke="#F1CCA9" stroke-width="2" stroke-linecap="round"/>
+        </svg><br /><br />Courbevoie,<br />France</p>
+      </p>
     </footer>
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
   </body>

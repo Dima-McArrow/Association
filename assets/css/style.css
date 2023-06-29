@@ -58,22 +58,54 @@ body {
 footer {
   background-color: #839E68;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "text logo logo logo" "legal legal legal legal";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "text text text logo" "legal legal legal legal" "phone phone mail mail" "adress adress adress adress";
   align-items: center;
   justify-content: center;
   align-content: center;
+  color: #F1CCA9;
+  font-family: "Cabin", sans-serif;
+  padding: 0 2rem;
 }
 footer h3 {
   grid-area: text;
+  padding-left: 1.5rem;
 }
-footer p {
+footer .legal {
   grid-area: legal;
+  padding: 0.7rem;
 }
 footer .footer__logo__holder {
+  grid-area: logo;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-bottom: 1.2rem;
+}
+footer .socialNet {
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+footer .phone {
+  grid-area: phone;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+footer .mail {
+  grid-area: mail;
+  padding: 0.6rem;
+  font-size: 0.7rem;
+  text-align: center;
+  font-weight: bold;
+}
+footer .adress {
+  grid-area: adress;
+  padding: 0.6rem;
+  font-size: 0.7rem;
+  margin-top: 1.7rem;
+  text-align: center;
 }
 
 .contact__logo {
