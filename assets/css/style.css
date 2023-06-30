@@ -26,6 +26,14 @@ body {
   height: auto;
 }
 
+nav {
+  margin-top: 3rem;
+}
+nav a {
+  font-size: 1.4rem;
+  line-height: 5rem;
+}
+
 .header {
   background-color: #2C5F2D;
   width: 100%;
@@ -33,9 +41,24 @@ body {
   font-family: "Cabin", sans-serif;
   color: #FFFFD2;
   padding: 1.3rem;
+  position: relative;
+  /* Quand le checkbox est checked le voisin nav passe en display: block */
 }
 .header .main__nav {
   display: none;
+}
+.header .nav__switch:checked ~ nav {
+  display: block;
+}
+.header .nav__switch {
+  display: none;
+}
+.header .nav__switch__png {
+  width: 2.7rem;
+  height: 2.7rem;
+  position: absolute;
+  top: 3.3rem;
+  right: 1.7rem;
 }
 
 .main__title {
