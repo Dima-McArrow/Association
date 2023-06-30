@@ -17,6 +17,15 @@ body {
   background-color: #EBF1E5;
 }
 
+.header__logo {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+.header__logo .header__logo__img {
+  width: 5rem;
+  height: auto;
+}
+
 .header {
   background-color: #839E68;
   width: 100%;
