@@ -1,0 +1,19 @@
+@use "../utils/_main" as main
+@use "../atoms/_nav" as nav
+
+
+.nav__container
+  .nav__switch:checked ~ nav
+    display: block
+  
+  .nav__switch
+    display: none
+
+nav
+  margin-top: 1rem
+  background-color: main.$darkGreen
+  position: relative
+  top: -4rem
+
+.main__nav
+  display: none
