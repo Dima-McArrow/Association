@@ -34,6 +34,9 @@ body {
   color: #FFFFD2;
   padding: 1.3rem;
 }
+.header .main__nav {
+  display: none;
+}
 
 .main__title {
   font-family: "Cabin", sans-serif;
