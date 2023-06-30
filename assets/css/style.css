@@ -67,18 +67,18 @@ body {
 
 .modal-body {
   background-color: #C5FAD5;
-  color: #AA96DA;
+  color: #979797;
 }
 
 .modal-header {
-  background-color: #AA96DA;
+  background-color: #2C5F2D;
 }
 .modal-header .modal-title {
-  color: #C5FAD5;
+  color: #FFFFD2;
 }
 
 .modal-footer {
-  background-color: #D9D9D9;
+  background-color: #2C5F2D;
 }
 
 footer {
