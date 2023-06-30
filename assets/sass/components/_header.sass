@@ -1,5 +1,6 @@
 @use "../utils/_main" as main
 @use "../atoms/_logo" as logo
+@use "../atoms/_nav" as nav
 
 .header
   background-color: main.$darkGreen
@@ -8,6 +9,16 @@
   font-family: main.$mainFont
   color: main.$header
   padding: 1.3rem
+  position: relative
+  
+/* Quand le checkbox est checked, le voisin nav passe en display: block */
 
-  .main__nav
+  .nav__switch:checked ~ nav 
+    display: block
+
+  /* Je cache le checkbox, que le label reste affiche */
+
+  .nav__switch
     display: none
+
+  

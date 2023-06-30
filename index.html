@@ -12,15 +12,20 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__logo"><a href="index.html"><img class="header__logo__img" src="assets/visuals/png/IMG_0967-PhotoRoom.png-PhotoRoom.png" alt="Association logo">Association</a></div>
-      <nav class="main__nav">
-        <ul>
-          <li>Qui sommes nous?</li>
-          <li>Événements</li>
-          <li>Faitez un don</li>
-        </ul>
-      </nav>
+      <div class="header__logo"><a href="index.html"><img class="header__logo__img" src="assets/visuals/png/IMG_0967-PhotoRoom.png-PhotoRoom.png" alt="Association logo">Association</a>
+      </div>
+      <input type="checkbox" class="nav__switch" id="nav__switch">
+      <label for="nav__switch" class="nav__switch_label">
+        <img class="nav__switch__png" src="./assets/visuals/png/burger-bar.png" alt="menu icon">
+      </label>
     </header>
+    <nav class="main__nav">
+      <ul>
+        <li><a href="#info__title__anchor">Qui sommes nous?</a></li>
+        <li><a href="http://">Événements</a></li>
+        <li><a href="don.html">Faitez un don</a></li>
+      </ul>
+    </nav>
     <main>
       <article>
         <section class="main">
@@ -32,13 +37,14 @@
         </section>
         <div class="separator"></div>
         <div class="separator--rev"></div>
-        <section class="info">
+        <section class="info" id="info__title__anchor">
           <h2 class="info__title">Qui nous sommes</h2>
           <p class="info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, repellendus recusandae! At eius culpa dolore, eveniet voluptatum laboriosam, vitae similique vero dolorum assumenda in doloribus, tempore quaerat asperiores voluptas tempora.
           Dignissimos repudiandae sequi, consequuntur temporibus explicabo dicta laborum officia sunt voluptates, iusto quam obcaecati doloribus reprehenderit neque sed tenetur exercitationem alias perspiciatis libero! Neque ducimus, sit sequi veniam aspernatur voluptates.
           Unde nulla ut sint molestiae culpa blanditiis, corporis delectus consectetur alias, tempora quae omnis repellat inventore, ratione error quibusdam doloribus officia aut dolorem exercitationem. Fugiat quae voluptate optio laudantium assumenda!
           Excepturi, eaque quia voluptate eveniet sapiente earum placeat. Vitae, doloremque magnam, nulla eveniet ullam cum dolor dolorem distinctio provident, quidem commodi. Quas, ipsam esse impedit deserunt sunt voluptatem exercitationem rem!
           Consequatur cum iure aliquam adipisci provident officia velit nobis reprehenderit, blanditiis minus eum rerum, corporis maxime nihil soluta suscipit deleniti commodi modi culpa voluptatum non accusamus ab? Vel, commodi optio!</p>
+          <hr />
         </section>
         <section class="cards">
           <div class="card" style="width: 18rem;">
