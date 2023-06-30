@@ -81,6 +81,18 @@ body {
   background-color: #2C5F2D;
 }
 
+.info .info__title {
+  text-align: center;
+  font-weight: bold;
+  color: #AA96DA;
+}
+.info .info__text {
+  text-align: center;
+  font-weight: regular;
+  color: #2C5F2D;
+  padding: 2rem 2rem;
+}
+
 footer {
   background-color: #2C5F2D;
   display: grid;
@@ -155,15 +167,24 @@ footer .adress {
 
 div.separator {
   width: 100%;
-  height: 4rem;
-  background-color: #AA96DA;
+  height: 7rem;
+  background: linear-gradient(#C5FAD5, #9198e5);
+  margin-bottom: 0;
+}
+
+div.separator--rev {
+  width: 100%;
+  height: 7rem;
+  background: linear-gradient(#C5FAD5, #9198e5);
   margin-bottom: 3rem;
+  transform: rotate(180deg);
 }
 
 .btn-primary {
   display: block;
   width: 70%;
-  margin: 2rem auto;
+  margin: 1rem auto;
+  margin-bottom: 3rem;
 }
 
 .btn-card {

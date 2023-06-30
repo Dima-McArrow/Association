@@ -1,0 +1,11 @@
+@use "../utils/_main" as main
+
+.info
+  .info__title
+    @include main.centerB-R(bold)
+    color: main.$darkViolet
+
+  .info__text
+    @include main.centerB-R(regular)
+    color: main.$darkGreen
+    padding: 2rem 2rem
