@@ -15,6 +15,7 @@ ul {
 
 body {
   background-color: #C5FAD5;
+  font-family: "Cabin", sans-serif;
 }
 
 .header__logo {
@@ -34,12 +35,12 @@ body {
   right: 1.7rem;
 }
 
-a {
-  font-size: 1.4rem;
+nav {
+  font-size: 1.1rem;
   line-height: 5rem;
   color: #FFFFD2;
+  text-transform: uppercase;
 }
-
 .header {
   background-color: #2C5F2D;
   width: 100%;
@@ -78,6 +79,7 @@ a {
   color: #979797;
   font-size: 0.6rem;
   text-align: center;
+  padding: 0 2rem;
 }
 
 .modal-body {
@@ -108,12 +110,26 @@ a {
   padding: 2rem 2rem;
 }
 
+.carousel {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  display: none;
+}
+.carousel .carousel__title {
+  color: #FFFFD2;
+  font-size: 3rem;
+}
+.carousel .carousel__text {
+  color: #FFFFD2;
+}
+
 footer {
   background-color: #2C5F2D;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "text text text logo" "legal legal legal legal" "phone phone mail mail" "adress adress adress adress";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "text text text logo" "legal legal legal legal" "contact contact contact contact";
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -128,6 +144,7 @@ footer h3 {
 footer .legal {
   grid-area: legal;
   padding: 0.7rem;
+  align-self: baseline;
 }
 footer .footer__logo__holder {
   grid-area: logo;
@@ -139,19 +156,33 @@ footer .socialNet {
   margin-top: 2rem;
   margin-right: 1rem;
 }
-footer .phone {
+footer .connect {
+  grid-area: contact;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.4fr;
+  grid-template-areas: "phone mail" "adress adress";
+  align-self: baseline;
+}
+footer .connect .phone {
   grid-area: phone;
   padding: 0.6rem;
   font-size: 0.8rem;
   text-align: center;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-footer .mail {
+footer .connect .mail {
   grid-area: mail;
   padding: 0.6rem;
   font-size: 0.7rem;
   text-align: center;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer .adress {
   grid-area: adress;
@@ -168,6 +199,7 @@ footer .adress {
 }
 
 .card {
+  width: 18rem;
   background-color: #D9D9D9;
   display: block;
   margin: 0.5rem auto;
@@ -206,6 +238,11 @@ div.separator--rev {
   background-color: #2C5F2D;
   color: #FFFFD2;
 }
+.btn-card:hover {
+  background-color: #2C5F2D;
+  opacity: 50%;
+  color: #FFFFD2;
+}
 
 .nav__container .nav__switch:checked ~ nav {
   display: block;
@@ -230,9 +267,74 @@ nav {
     display: none;
   }
   #main__nav {
-    display: block;
+    background: transparent;
+    display: inline-block;
     position: absolute;
+    width: 40rem;
+    height: auto;
     top: 0;
     right: 0;
+  }
+  li {
+    display: inline;
+    margin-right: 3rem;
+    border-bottom: 0.2rem solid #FFFFD2;
+  }
+  li:hover {
+    border-bottom: 0.7rem solid #FFFFD2;
+  }
+  ul {
+    margin-top: 3rem;
+  }
+  .main__title {
+    margin-top: 3rem;
+  }
+  .main__text {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .mainPic {
+    display: none;
+  }
+  .carousel {
+    display: block;
+  }
+  .cards {
+    display: flex;
+    padding: 2rem 2.5rem;
+  }
+  .card {
+    width: 20rem;
+  }
+  .info__title {
+    text-align: left;
+  }
+  footer {
+    display: block;
+    padding-top: 3rem;
+  }
+  footer .mail {
+    display: flex;
+  }
+  footer .mail:hover {
+    opacity: 50%;
+  }
+  footer .phone {
+    display: flex;
+  }
+  footer .phone:hover {
+    opacity: 50%;
+  }
+  footer .adress {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  footer .socialNet {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer h3 {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

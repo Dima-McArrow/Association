@@ -4,8 +4,8 @@ footer
   background-color: main.$darkGreen
   display: grid
   grid-template-columns: 1fr 1fr 1fr 1fr
-  grid-template-rows: 1fr 1fr 1fr 1fr
-  grid-template-areas: "text text text logo" "legal legal legal legal" "phone phone mail mail" "adress adress adress adress"
+  grid-template-rows: 1fr 1fr 1fr
+  grid-template-areas: "text text text logo" "legal legal legal legal" "contact contact contact contact"
   align-items: center
   justify-content: center
   align-content: center
@@ -21,6 +21,7 @@ footer
   .legal
     grid-area: legal
     padding: .7rem
+    align-self: baseline
 
   .footer__logo__holder
     grid-area: logo
@@ -32,18 +33,29 @@ footer
     margin-top: 2rem
     margin-right: 1rem
 
-  .phone
-    grid-area: phone
-    padding: .6rem
-    font-size: .8rem
-    @include main.centerB-R(bold)
+  .connect
+    grid-area: contact
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: .5fr .4fr
+    grid-template-areas: "phone mail" "adress adress"
+    align-self: baseline
+    .phone
+      grid-area: phone
+      padding: .6rem
+      font-size: .8rem
+      @include main.centerB-R(bold)
+      display: flex
+      @include main.centered
 
-  .mail
-    grid-area: mail
-    padding: .6rem
-    font-size: .7rem
-    text-align: center
-    font-weight: bold
+    .mail
+      grid-area: mail
+      padding: .6rem
+      font-size: .7rem
+      text-align: center
+      font-weight: bold
+      display: flex
+      @include main.centered
 
   .adress
     grid-area: adress

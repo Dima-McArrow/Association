@@ -1,11 +1,61 @@
+@use "_main" as main
+
 @media (min-width: 700px)
   
   .nav__switch_label
     display: none
 
   #main__nav
-    display: block
+    background: transparent
+    display: inline-block
     position: absolute
+    width: 40rem
+    height: auto
     top: 0
     right: 0
-    
+  li
+    display: inline
+    margin-right: 3rem
+    border-bottom: .2rem solid main.$header
+  li:hover
+    border-bottom: .7rem solid main.$header
+  ul
+    margin-top: 3rem
+  .main__title
+    margin-top: 3rem
+  .main__text
+    margin-top: 2rem
+    margin-bottom: 3rem
+  .mainPic
+    display: none
+  .carousel
+    display: block
+  .cards
+    display: flex
+    padding: 2rem 2.5rem
+  .card
+    width: 20rem
+  .info__title
+    text-align: left
+  footer
+    display: block
+    padding-top: 3rem
+    .mail
+      display: flex
+      &:hover
+        opacity: 50%
+    .phone
+      display: flex
+      &:hover
+        opacity: 50%
+    .adress
+      display: flex
+      justify-content: center
+      gap: 1rem
+    .socialNet
+      display: flex
+      justify-content: space-evenly
+    h3
+      font-size: 1rem
+    .footer__logo__holder
+      
