@@ -36,8 +36,8 @@ body {
 }
 
 nav {
-  font-size: 1.1rem;
-  line-height: 5rem;
+  font-size: 0.7rem;
+  line-height: 7rem;
   color: #FFFFD2;
   text-transform: uppercase;
 }
@@ -357,7 +357,7 @@ div.separator--rev {
     border-bottom: 0.7rem solid #FFFFD2;
   }
   ul {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   .main__title {
     margin-top: 3rem;
