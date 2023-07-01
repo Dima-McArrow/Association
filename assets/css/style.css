@@ -285,6 +285,25 @@ th {
   text-align: center;
 }
 
+.main__form {
+  padding: 1rem 2rem;
+}
+
+.contact__main__title {
+  text-align: center;
+  font-weight: bold;
+  color: #AA96DA;
+  margin: 2rem 0;
+}
+
+.contact__main__message {
+  text-align: center;
+  font-weight: regular;
+  color: #2C5F2D;
+  font-size: 1rem;
+  margin: 0 1rem 2rem 1rem;
+}
+
 .contact__logo {
   width: 30px;
   height: 30px;

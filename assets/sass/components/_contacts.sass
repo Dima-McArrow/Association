@@ -1,0 +1,14 @@
+@use "../atoms/_form"
+@use "../utils/_main" as main
+
+.contact__main__title
+  @include main.centerB-R(bold)
+  color: main.$darkViolet
+  margin: 2rem 0
+
+
+.contact__main__message
+  @include main.centerB-R(regular)
+  color: main.$darkGreen
+  font-size: 1rem
+  margin: 0 1rem 2rem 1rem
