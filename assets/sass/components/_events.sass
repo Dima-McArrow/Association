@@ -1,0 +1,30 @@
+@use "../utils/_main" as main
+
+.bigScreen__display
+  display: none
+
+.mobile__display
+  margin-bottom: 2rem
+
+.events__title
+  @include main.centerB-R(bold)
+  color: main.$darkGreen
+  margin: 2rem 1rem
+
+.event__name
+  color: main.$darkViolet
+  padding: 1rem 2rem 1rem .7rem
+  font-weight: bold
+.event__date
+  color: main.$darkGreen
+  padding: 1rem 2rem 1rem .7rem
+.event__prog
+  color: main.$darkGreen
+  padding: 1rem 2rem 1rem .7rem
+  text-decoration: underline
+.event__adress
+  color: main.$darkViolet
+  padding: 1rem 2rem 1rem .7rem
+th
+  text-transform: uppercase
+  text-align: center

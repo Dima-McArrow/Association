@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Association | Collecte des dons</title>
+    <title>Événements de l'Association</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   </head>
   <body>
     <header class="header">
@@ -20,20 +23,68 @@
       <nav class="main__nav" id="main__nav">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="events.html">Événements</a></li>
+          <li><a href="don.html">Faitez un don</a></li>
         </ul>
       </nav>
     </div>
     <main>
       <article>
-        <h1 class="don__main__title">Aidez-nous, faites un don</h1>
-        <p class="don__main__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit accusamus doloribus, quo commodi voluptatem consequuntur sapiente officia. Earum, nam. Pariatur porro voluptates, eveniet rem facere quis officia perferendis placeat distinctio. Dolorem ipsam quo aliquam ratione distinctio cum! Magni vel eum accusamus hic tenetur enim, nobis natus quisquam amet. Et nobis qui tempore ipsam at enim animi laboriosam veniam quam neque! Culpa a dolorem dolore impedit dolores beatae unde voluptate fugiat cupiditate nihil repellendus id ipsum sint quia explicabo praesentium, numquam vero reprehenderit repudiandae? Repellat pariatur quam dolore similique neque omnis?</p>
-        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="53" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 53%"></div>
-        </div>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDon">
-          Vous aussi, particpez en faisant un don
-      </button>
+        <h1 class="events__title">Nos événements à l'échelle national</h1>
+        <table class="table bigScreen__display table-hover table-dark">
+          <caption></caption>
+          <thead>
+            <tr>
+              <th scope="col">Événement</th>
+              <th scope="col">Date</th>
+              <th scope="col">Programme</th>
+              <th scope="col">adresse</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row">Lorem, ipsum. Lorem ipsum dolor sit amet.</th>
+              <td>13.07.2023 - 15.07.2023</td>
+              <td><a href="http://google.com">suivre le lien</a></td>
+              <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
+            </tr>
+            <tr>
+              <th scope="row">Lorem ipsum dolor sit amet consectetur.</th>
+              <td>19.07.2023 - 25.07.2023</td>
+              <td><a href="http://google.com">suivre le lien</a></td>
+              <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, cum.</td>
+            </tr>
+            <tr>
+              <th scope="row">Lorem ipsum, dolor sit amet consectetur adipisicing.</th>
+              <td>27.07.2023 - 30.07.2023</td>
+              <td><a href="http://google.com">suivre le lien</a></td>
+              <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore.</td>
+            </tr>
+          </tbody>
+        </table>
+        <section class="mobile__display">
+          <div>
+            <hr />
+            <h2 class="event__name">Lorem, ipsum. Lorem ipsum dolor sit amet.</h2>
+            <h3 class="event__date">13.07.2023 - 15.07.2023</h3>
+            <p class="event__prog"><a href="http://google.com">suivre le lien</a></p>
+            <p class="event__adress">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <hr />
+          </div>
+          <div>
+            <h2 class="event__name">Lorem, ipsum. Lorem ipsum dolor sit amet.</h2>
+            <h3 class="event__date">19.07.2023 - 25.07.2023</h3>
+            <p class="event__prog"><a href="http://google.com">suivre le lien</a></p>
+            <p class="event__adress">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <hr />
+          </div>
+          <div>
+            <h2 class="event__name">Lorem, ipsum. Lorem ipsum dolor sit amet.</h2>
+            <h3 class="event__date">27.07.2023 - 30.07.2023</h3>
+            <p class="event__prog"><a href="http://google.com">suivre le lien</a></p>
+            <p class="event__adress">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <hr />
+          </div>
+        </section>
       </article>
     </main>
     <footer>
@@ -82,64 +133,6 @@
         </p>
       </div>
     </footer>
-
-      <!-- Modal -->
-
-    <div class="modal fade" id="modalDon" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="maModalLabel">Faites un don</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <form action="">
-                      <div class="col">
-                          <label for="nom" class="form-label">Nom</label>
-                          <input type="text" class="form-control mb-2" id="nom"
-                              placeholder="Votre nom (obligatoire)" required>
-                      </div>
-                      <div class="col">
-                          <label for="nom" class="form-label">Prénom</label>
-                          <input type="text" class="form-control mb-2" id="prenom"
-                              placeholder="Votre prénom (obligatoire)" required>
-                      </div>
-                      <div class="col">
-                          <label for="email" class="form-label">Email</label>
-                          <input type="email" class="form-control mb-2" id="email"
-                              placeholder="Votre adresse email (obligatoire)" required>
-                      </div>
-                      <div class="col">
-                          <label for="don" class="form-label">Montant de votre don</label>
-                          <select class="form-select mb-2" id="don" required>
-                              <option value="">Montant de votre don</option>
-                              <option value="1">10€</option>
-                              <option value="2">20€</option>
-                              <option value="3">30€</option>
-                              <option value="4">40€</option>
-                              <option value="5">50€</option>
-                              <option value="6">60€</option>
-                              <option value="7">70€</option>
-                              <option value="8">80€</option>
-                              <option value="9">90€</option>
-                          </select>
-                      </div>
-                  </form>
-              </div>
-              <div class="modal-footer">
-                  <button class="btn btn-success" type="submit">Envoyer</button>
-
-                  <p class="modal__smallText">En cliquant sur envoyer, vous serez dirigé vers la plateforme de payment. Merci de votre
-                      investissement.</p>
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-
-              </div>
-          </div>
-      </div>
-    </div>
-
-    <!-- fin du Modal -->
-
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

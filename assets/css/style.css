@@ -238,6 +238,48 @@ nav {
   padding: 0 2rem;
 }
 
+.bigScreen__display {
+  display: none;
+}
+
+.mobile__display {
+  margin-bottom: 2rem;
+}
+
+.events__title {
+  text-align: center;
+  font-weight: bold;
+  color: #2C5F2D;
+  margin: 2rem 1rem;
+}
+
+.event__name {
+  color: #AA96DA;
+  padding: 1rem 2rem 1rem 0.7rem;
+  font-weight: bold;
+}
+
+.event__date {
+  color: #2C5F2D;
+  padding: 1rem 2rem 1rem 0.7rem;
+}
+
+.event__prog {
+  color: #2C5F2D;
+  padding: 1rem 2rem 1rem 0.7rem;
+  text-decoration: underline;
+}
+
+.event__adress {
+  color: #AA96DA;
+  padding: 1rem 2rem 1rem 0.7rem;
+}
+
+th {
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .contact__logo {
   width: 30px;
   height: 30px;
@@ -367,5 +409,11 @@ div.separator--rev {
   }
   footer h3 {
     font-size: 1rem;
+  }
+  .bigScreen__display {
+    display: table;
+  }
+  .mobile__display {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
