@@ -98,6 +98,15 @@ nav {
   background-color: #2C5F2D;
 }
 
+.modal__smallText {
+  font-size: 0.8rem;
+  color: #D9D9D9;
+}
+
+.form-label {
+  color: #2C5F2D;
+}
+
 .info .info__title {
   text-align: center;
   font-weight: bold;
@@ -192,6 +201,43 @@ footer .adress {
   align-self: baseline;
 }
 
+.nav__container .nav__switch:checked ~ nav {
+  display: block;
+}
+.nav__container .nav__switch {
+  display: none;
+}
+
+nav {
+  margin-top: 1rem;
+  background-color: #2C5F2D;
+  position: relative;
+  top: -4rem;
+}
+
+.main__nav {
+  display: none;
+}
+
+.progress {
+  margin: 2.2rem 1rem;
+}
+
+.don__main__title {
+  text-align: center;
+  font-weight: bold;
+  color: #AA96DA;
+  margin-top: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.don__main__text {
+  text-align: center;
+  font-weight: regular;
+  color: #2C5F2D;
+  padding: 0 2rem;
+}
+
 .contact__logo {
   width: 30px;
   height: 30px;
@@ -229,7 +275,7 @@ div.separator--rev {
 
 .btn-primary {
   display: block;
-  width: 70%;
+  width: 73%;
   margin: 1rem auto;
   margin-bottom: 3rem;
 }
@@ -244,24 +290,9 @@ div.separator--rev {
   color: #FFFFD2;
 }
 
-.nav__container .nav__switch:checked ~ nav {
-  display: block;
-}
-.nav__container .nav__switch {
-  display: none;
-}
-
-nav {
-  margin-top: 1rem;
-  background-color: #2C5F2D;
-  position: relative;
-  top: -4rem;
-}
-
-.main__nav {
-  display: none;
-}
-
+/* .btn-success
+ * display: block
+ * margin: 2rem auto */
 @media (min-width: 700px) {
   .nav__switch_label {
     display: none;
